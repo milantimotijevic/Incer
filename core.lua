@@ -16,7 +16,11 @@ SlashCmdList["INCER"] = function(inp)
             local msg = "INC " .. counter .. " - " .. GetMinimapZoneText();
             SendChatMessage(msg, "INSTANCE_CHAT");
             --print(msg);
-            counter = 0;
+            if timer then
+                timer:Cancel();
+                timer = nil;
+                counter = 0;
+            end
         end);
 
     elseif inp == "safe" then
