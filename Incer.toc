@@ -1,0 +1,5 @@
+## Interface: 11304
+## Title : Incer
+## Notes: Automates INC calls in BGs
+## Author: Thorniel
+core.lua
